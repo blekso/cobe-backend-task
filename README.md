@@ -1,7 +1,7 @@
 # Node, Typescript and Mongoose Backend task for Internship at COBE
 
 ### Description
-Before running the project user has to have mongo daemon launched in the background!
+Before running the project user needs to have mongo daemon launched in the background!
 
 ### Installing
 
