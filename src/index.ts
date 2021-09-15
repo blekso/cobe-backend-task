@@ -12,9 +12,9 @@ mongoose
 app.use("/api/groceries", groceriesRouter);
 
 if (process.env.NODE_ENV === "development") {
-  console.log('Running in development mode...')
+  console.log('Running in dev env...')
 } else {
-  console.log('Running in production mode...')
+  console.log('Running in prod env...')
 }
 
 const port = process.env.PORT || 5000;

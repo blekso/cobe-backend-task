@@ -18,7 +18,6 @@ if (process.env.NODE_ENV === "development") {
 else {
     console.log('Running in production mode...');
 }
-//set PORT=5000
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Listening on port ${port}...`);
