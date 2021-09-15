@@ -1,12 +1,7 @@
-# Node, Typescript Backend task for Internship at COBE
-
-### Dependencies
-
-* Mongoose, nodemon
-* Windows 10
+# Node, Typescript and Mongoose Backend task for Internship at COBE
 
 ### Description
-Before running the project user has to have mongo daemon launched in the background!
+Before running the project user needs to have mongo daemon launched in the background!
 
 ### Installing
 
@@ -29,6 +24,16 @@ npm run build
 Run build
 ```
 npm run start
+```
+
+### Change NODE_ENV
+linux & mac: 
+```
+export NODE_ENV=production
+```
+windows: 
+```
+$env:NODE_ENV = 'production'
 ```
 
 ### Author
