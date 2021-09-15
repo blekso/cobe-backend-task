@@ -1,6 +1,7 @@
-const express = require("express");
-const { Grocery } = require("../models/grocery");
-const router = express.Router();
+import express from "express";
+import { Grocery } from "../models/grocery";
+
+export const router = express.Router();
 
 async function getGroceries() {
   try {
@@ -42,7 +43,8 @@ function calculateTotalPrice(groceries) {
 }
 
 function calculateTotalPriceWithTaxes(groceries) {
-  let result = Number(calculateTotalPrice(groceries)) - Number(calculateTaxes(groceries));
+  let result =
+    Number(calculateTotalPrice(groceries)) - Number(calculateTaxes(groceries));
   return result.toFixed(2);
 }
 
@@ -62,5 +64,3 @@ router.get("/", (req, res) => {
     })
     .catch((err) => res.send(err));
 });
-
-module.exports = router;

@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const Grocery = mongoose.model(
+export const Grocery = mongoose.model(
   "grocery",
   new mongoose.Schema({
     name: { type: String, required: true },
@@ -8,5 +8,3 @@ const Grocery = mongoose.model(
     price: { type: Number, required: true },
   })
 );
-
-module.exports.Grocery = Grocery;
