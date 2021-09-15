@@ -16,3 +16,7 @@ npm i
 ```
 npm start
 ```
+
+### Author
+
+Mihael Ištvan
