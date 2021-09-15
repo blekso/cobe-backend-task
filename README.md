@@ -37,7 +37,7 @@ $env:NODE_ENV = 'production'
 ```
 
 ### App results
-MongoDb groceries:\ 
+MongoDb groceries:\
 ![image](https://user-images.githubusercontent.com/62482593/133522072-9727c450-6aa8-4192-b248-73ccb4f101cc.png)
 
 Postman output:\
