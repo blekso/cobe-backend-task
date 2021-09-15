@@ -37,9 +37,9 @@ function calculateNumberOfArticles(groceries) {
 function calculateTotalPrice(groceries) {
   let result = 0;
   groceries.forEach(
-    (g) => (result += g.price * calculateNumberOfArticles(groceries))
+    (g) => (result += g.price * g.quantity)
   );
-  return result.toFixed(2);
+  return result;
 }
 
 function calculateTotalPriceWithTaxes(groceries) {
